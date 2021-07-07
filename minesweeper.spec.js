@@ -5,11 +5,11 @@ describe(')', () => {
     expect(annotate([])).toEqual([]);
   });
 
-  xtest('handles no columns', () => {
+  test('handles no columns', () => {
     expect(annotate([''])).toEqual(['']);
   });
 
-  xtest('handles no mines', () => {
+  test('handles no mines', () => {
     const input = ['   ', '   ', '   '];
     const expected = ['   ', '   ', '   '];
     expect(annotate(input)).toEqual(expected);
